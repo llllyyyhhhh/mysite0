@@ -27,6 +27,7 @@ urlpatterns = [
     path('likes/', include('likes.urls')),
     path('user/', include('user.urls')),
     path('ckeditor/', include('ckeditor_uploader.urls')),
+    path('search/', views.search, name="search"),
 ]
 
 urlpatterns += static.static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

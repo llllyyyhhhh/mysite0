@@ -14,6 +14,7 @@ class BlogType(models.Model):
 
 class Blog(models.Model, ReadNumExpandMethod):
     title = models.CharField(max_length=50, verbose_name='标题')
+    types = models.CharField(max_length=100, verbose_name='类型标签', default='/')
     blog_type = models.ForeignKey(BlogType, on_delete=models.CASCADE, related_name='blog_blog', verbose_name='类型')
     content = RichTextUploadingField()
     author = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name='作者')
