@@ -24,7 +24,7 @@
                     <li>阅读({{ blog.get_read_num }})</li>
                     <li>评论({% get_comment_count blog %})</li>
                 </ul>
-                <div class="blog-content">{{ blog.content }}</div>
+                <div class="blog-content">{{ blog.content|safe }}</div>
                 <div class="like" onclick="likeChange(this, 'blog', {{ blog.pk }})">
                     <span class="glyphicon glyphicon-thumbs-up {% get_like_status blog %}"></span>
                     <span class="liked-num">{% get_liked_num blog %}</span>
