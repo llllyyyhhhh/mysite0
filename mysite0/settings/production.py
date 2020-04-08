@@ -17,7 +17,7 @@ from .base import *
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ['SECRET_KEY']
+SECRET_KEY = 'umi40s#+41x85g-s@reum$zh=*^p=9(zuwqfjxy0ewnz&@(6ty'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -28,13 +28,13 @@ ALLOWED_HOSTS = ['*']
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 # MySQL 配置
-DATABASE_PASSWORD = os.environ['DATABASE_PASSWORD']
+# DATABASE_PASSWORD = os.environ['DATABASE_PASSWORD']
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'mysite0_db',
         'USER': 'simpleuinb',
-        'PASSWORD': DATABASE_PASSWORD,
+        'PASSWORD': 'sb123456',
         'HOST': '127.0.0.1',
         'PORT': '3306',
     }
@@ -44,7 +44,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.office365.com'
 EMAIL_PORT = '587'
 EMAIL_HOST_USER = 'yf2913128@outlook.com'
-EMAIL_HOST_PASSWORD = os.environ['EMAIL_HOST_PASSWORD']
+EMAIL_HOST_PASSWORD = 'lyh8816577'
 EMAIL_SUBJECT_PREFIX = '[LYH_VERIFICATION_EMAIL]'
 EMAIL_USE_TLS = True
 # EMAIL_USE_SSL =
