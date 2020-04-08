@@ -101,7 +101,7 @@ USE_TZ = True
 # Media
 
 MEDIA_ROOT = '/media/'
-MEDIA_URL = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = os.path.join(BASE_DIR, 'media'),
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
